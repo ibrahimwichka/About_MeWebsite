@@ -1,0 +1,141 @@
+.body{
+    background-image: url(https://websitepeople.com.au/wp-content/uploads/2018/06/pattern-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    right: -200%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#Ibrahim{
+    display: flex;
+    width: 20vw;
+    justify-content: space-around;
+    font-size: 25%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+
+
+
+.bar-link{
+    background-color: red;
+    color: white;
+    padding: 13% 20%;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    position: relative;
+    right:-300%;
+    top:-62%;
+    margin-right: 200px;
+    
+}
+
+
+
+
+.homepage3{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 2vh;
+    padding-top: 10%
+}
+
+
+table , th, td {
+    border:2px solid black;
+    width: 100%;
+}
+
+
+#hamburger-menu{
+    background-image: url(menu.svg);
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    padding: 0px;
+    position: fixed;
+    top: 20px;
+    right: 17px;
+    visibility: hidden;
+
+}
+
+#hamburger{
+    opacity:0;
+}
+
+#hamburger:checked ~ #sidebar{
+    opacity: 100;
+}
+
+#sidebar li{
+    list-style-type: none;
+}
+
+#sidebar ul{
+    padding: 0px;
+}
+
+#sidebar a {
+    font-size: 1.5em;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#sidebar{
+    position: absolute;
+    width: 200px;
+    background-color: #eeeeee40;
+    right: 0px;
+    top: 40px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+@media (min-width:300px) and (max-width: 800px){
+    .homepage3{
+        text-align: left;
+        font-size: 3vh;
+        padding-top: 30%;
+        width: 60%;
+        
+    }
+    
+
+    #hamburger-menu{
+        visibility: visible;
+        text-align: center;
+
+    }
+    .links{
+        visibility: hidden;
+    }
+
+    #Ibrahim{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
